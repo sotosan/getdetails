@@ -10,7 +10,7 @@ export default class GetData extends React.Component {
         }
     }
     componentDidMount() {
-        axios.get('http://localhost:3000/api/persondetails').then(res => {
+        axios.get('https://george-contact-app.herokuapp.com/api/persondetails').then(res => {
             const dataRes = res.data;
             this.setState({ dataRes });
             console.log(this.state.dataRes);
